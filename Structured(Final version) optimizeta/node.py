@@ -150,9 +150,6 @@ class Node:
         return best_move
 
 
-
-    def evaluate_state(self):
-        return sum(1 if num in [1, 2] else -1 for num in self.sequence)
     
     def to_string(self):
         return f"Node {self.id} | Sequence: {self.sequence} | Depth: {self.depth}"
